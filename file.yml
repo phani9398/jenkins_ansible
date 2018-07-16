@@ -1,0 +1,10 @@
+---
+- name: creating file
+  hosts: test
+  become: true
+  tasks:
+  - name: creating file in node machine
+    file:
+       path: /opt/phani_ansible
+       state: touch
+
